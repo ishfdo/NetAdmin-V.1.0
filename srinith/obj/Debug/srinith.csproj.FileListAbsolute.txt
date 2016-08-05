@@ -1,0 +1,10 @@
+C:\Users\Rasitha\Documents\Visual Studio 2013\Projects\srinith\srinith\bin\Debug\srinith.exe.config
+C:\Users\SrinitH\Desktop\New folder (3)\srinith\srinith\bin\Debug\srinith.exe.config
+C:\Users\SrinitH\Desktop\New folder (3)\srinith\srinith\bin\Debug\srinith.exe
+C:\Users\SrinitH\Desktop\New folder (3)\srinith\srinith\bin\Debug\srinith.pdb
+C:\Users\SrinitH\Desktop\New folder (3)\srinith\srinith\obj\Debug\srinith.csprojResolveAssemblyReference.cache
+C:\Users\SrinitH\Desktop\New folder (3)\srinith\srinith\obj\Debug\srinith.Form1.resources
+C:\Users\SrinitH\Desktop\New folder (3)\srinith\srinith\obj\Debug\srinith.Properties.Resources.resources
+C:\Users\SrinitH\Desktop\New folder (3)\srinith\srinith\obj\Debug\srinith.csproj.GenerateResource.Cache
+C:\Users\SrinitH\Desktop\New folder (3)\srinith\srinith\obj\Debug\srinith.exe
+C:\Users\SrinitH\Desktop\New folder (3)\srinith\srinith\obj\Debug\srinith.pdb
