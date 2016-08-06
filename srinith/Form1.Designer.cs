@@ -48,9 +48,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -212,6 +212,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Hardware Info";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -224,15 +225,15 @@
             this.panel1.Size = new System.Drawing.Size(376, 88);
             this.panel1.TabIndex = 8;
             // 
-            // button8
+            // button10
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(24, 26);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(92, 37);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "Shutdown";
-            this.button8.UseVisualStyleBackColor = true;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(259, 26);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(92, 37);
+            this.button10.TabIndex = 2;
+            this.button10.Text = "Sleep";
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
@@ -244,15 +245,15 @@
             this.button9.Text = "Restart";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // button8
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(259, 26);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(92, 37);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "Sleep";
-            this.button10.UseVisualStyleBackColor = true;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(24, 26);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(92, 37);
+            this.button8.TabIndex = 0;
+            this.button8.Text = "Shutdown";
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -273,6 +274,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NetAdmin V.1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
