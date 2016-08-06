@@ -182,7 +182,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "Hardware_Info";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hardware_Info";
+            this.Text = "Hardware Info";
             this.Load += new System.EventHandler(this.Hardware_Info_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageCPU.ResumeLayout(false);
