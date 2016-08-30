@@ -101,30 +101,35 @@
             this.uToolStripMenuItem.Name = "uToolStripMenuItem";
             this.uToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.uToolStripMenuItem.Text = "Usage Monitor";
+            this.uToolStripMenuItem.Click += new System.EventHandler(this.uToolStripMenuItem_Click);
             // 
             // checkSumToolStripMenuItem
             // 
             this.checkSumToolStripMenuItem.Name = "checkSumToolStripMenuItem";
             this.checkSumToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.checkSumToolStripMenuItem.Text = "Check Sum";
+            this.checkSumToolStripMenuItem.Click += new System.EventHandler(this.checkSumToolStripMenuItem_Click);
             // 
             // subnetCalToolStripMenuItem
             // 
             this.subnetCalToolStripMenuItem.Name = "subnetCalToolStripMenuItem";
             this.subnetCalToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.subnetCalToolStripMenuItem.Text = "Subnet Cal";
+            this.subnetCalToolStripMenuItem.Click += new System.EventHandler(this.subnetCalToolStripMenuItem_Click);
             // 
             // networkTestToolStripMenuItem
             // 
             this.networkTestToolStripMenuItem.Name = "networkTestToolStripMenuItem";
             this.networkTestToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.networkTestToolStripMenuItem.Text = "Network Test";
+            this.networkTestToolStripMenuItem.Click += new System.EventHandler(this.networkTestToolStripMenuItem_Click);
             // 
             // remoteConnectToolStripMenuItem
             // 
             this.remoteConnectToolStripMenuItem.Name = "remoteConnectToolStripMenuItem";
             this.remoteConnectToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.remoteConnectToolStripMenuItem.Text = "Remote Connect";
+            this.remoteConnectToolStripMenuItem.Click += new System.EventHandler(this.remoteConnectToolStripMenuItem_Click);
             // 
             // screenshotToolStripMenuItem
             // 

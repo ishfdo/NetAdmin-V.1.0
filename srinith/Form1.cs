@@ -71,6 +71,36 @@ namespace srinith
             form2.Activate();
         }
 
+        private void uToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form3.Show();
+            form3.Activate();
+        }
+
+        private void checkSumToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form4.Show();
+            form4.Activate();
+        }
+
+        private void subnetCalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form5.Show();
+            form5.Activate();
+        }
+
+        private void networkTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form6.Show();
+            form6.Activate();
+        }
+
+        private void remoteConnectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form7.Show();
+            form7.Activate();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 

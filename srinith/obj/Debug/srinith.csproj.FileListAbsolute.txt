@@ -28,3 +28,8 @@ C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srin
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.Hardware_Info.resources
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.Properties.Resources.resources
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.csproj.GenerateResource.Cache
+C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.CheckSum.resources
+C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.NetworkTest.resources
+C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.RemoteTest.resources
+C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.SubnetCal.resources
+C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.UsageMonitor.resources
