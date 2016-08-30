@@ -63,8 +63,20 @@
     <Compile Include="Hardware Info.Designer.cs">
       <DependentUpon>Hardware Info.cs</DependentUpon>
     </Compile>
+    <Compile Include="NetworkTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkTest.Designer.cs">
+      <DependentUpon>NetworkTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubnetCal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubnetCal.Designer.cs">
+      <DependentUpon>SubnetCal.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsageMonitor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +92,9 @@
     <EmbeddedResource Include="Hardware Info.resx">
       <DependentUpon>Hardware Info.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NetworkTest.resx">
+      <DependentUpon>NetworkTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -90,6 +105,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SubnetCal.resx">
+      <DependentUpon>SubnetCal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsageMonitor.resx">
       <DependentUpon>UsageMonitor.cs</DependentUpon>
     </EmbeddedResource>
