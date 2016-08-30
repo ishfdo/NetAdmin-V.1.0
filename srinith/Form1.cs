@@ -14,13 +14,57 @@ namespace srinith
 {
     public partial class Form1 : Form
     {
+        //---------- Initialize all the sub-forms
         Hardware_Info form2 = new Hardware_Info();
+        UsageMonitor form3 = new UsageMonitor();
+        CheckSum form4 = new CheckSum();
+        SubnetCal form5 = new SubnetCal();
+        NetworkTest form6 = new NetworkTest();
+        RemoteTest form7 = new RemoteTest();
 
         public Form1()
         {
             InitializeComponent();
         }
 
+        //---------- Setup buttons for all the sub-forms
+        private void button1_Click(object sender, EventArgs e)
+        {
+            form2.Show();
+            form2.Activate();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            form3.Show();
+            form3.Activate();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            form4.Show();
+            form4.Activate();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            form5.Show();
+            form5.Activate();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            form6.Show();
+            form6.Activate();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            form7.Show();
+            form7.Activate();
+        }
+
+        //---------- Setup tool strip menu for all the sub-forms
         private void hardwareInfoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             form2.Show();
@@ -30,12 +74,6 @@ namespace srinith
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            form2.Show();
-            form2.Activate();
         }
 
         private void button7_Click(object sender, EventArgs e)
