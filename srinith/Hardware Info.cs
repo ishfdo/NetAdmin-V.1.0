@@ -26,7 +26,7 @@ namespace srinith
             //------------------ display CPU information ------------------//
             mc = new ManagementClass("win32_processor");
             moc = mc.GetInstances();
-
+            
             txtCPU.AppendText("CPU information for " + computerProperties.HostName + " " + computerProperties.DomainName + Environment.NewLine + Environment.NewLine);
 
             foreach (ManagementObject mo in moc)

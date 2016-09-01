@@ -14,6 +14,11 @@ namespace srinith
 {
     public partial class Form1 : Form
     {
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
         //---------- Initialize all the sub-forms
         Hardware_Info form2 = new Hardware_Info();
         UsageMonitor form3 = new UsageMonitor();
@@ -101,11 +106,7 @@ namespace srinith
             form7.Activate();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        //---------- exit, shutdown, restart and sleep buttons
         private void button7_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
