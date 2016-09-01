@@ -48,9 +48,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -101,30 +101,35 @@
             this.uToolStripMenuItem.Name = "uToolStripMenuItem";
             this.uToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.uToolStripMenuItem.Text = "Usage Monitor";
+            this.uToolStripMenuItem.Click += new System.EventHandler(this.uToolStripMenuItem_Click);
             // 
             // checkSumToolStripMenuItem
             // 
             this.checkSumToolStripMenuItem.Name = "checkSumToolStripMenuItem";
             this.checkSumToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.checkSumToolStripMenuItem.Text = "Check Sum";
+            this.checkSumToolStripMenuItem.Click += new System.EventHandler(this.checkSumToolStripMenuItem_Click);
             // 
             // subnetCalToolStripMenuItem
             // 
             this.subnetCalToolStripMenuItem.Name = "subnetCalToolStripMenuItem";
             this.subnetCalToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.subnetCalToolStripMenuItem.Text = "Subnet Cal";
+            this.subnetCalToolStripMenuItem.Click += new System.EventHandler(this.subnetCalToolStripMenuItem_Click);
             // 
             // networkTestToolStripMenuItem
             // 
             this.networkTestToolStripMenuItem.Name = "networkTestToolStripMenuItem";
             this.networkTestToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.networkTestToolStripMenuItem.Text = "Network Test";
+            this.networkTestToolStripMenuItem.Click += new System.EventHandler(this.networkTestToolStripMenuItem_Click);
             // 
             // remoteConnectToolStripMenuItem
             // 
             this.remoteConnectToolStripMenuItem.Name = "remoteConnectToolStripMenuItem";
             this.remoteConnectToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.remoteConnectToolStripMenuItem.Text = "Remote Connect";
+            this.remoteConnectToolStripMenuItem.Click += new System.EventHandler(this.remoteConnectToolStripMenuItem_Click);
             // 
             // screenshotToolStripMenuItem
             // 
@@ -153,6 +158,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Usage Monitor";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -163,6 +169,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Check Sum";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -173,6 +180,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "Subnet Cal";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -183,6 +191,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "Network Test";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -193,6 +202,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "Remote Test";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -227,16 +237,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "System";
             // 
-            // button8
+            // button10
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(9, 35);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(92, 37);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "Shutdown";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(205, 35);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(92, 37);
+            this.button10.TabIndex = 2;
+            this.button10.Text = "Sleep";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button9
             // 
@@ -249,16 +259,16 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button10
+            // button8
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(205, 35);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(92, 37);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "Sleep";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(9, 35);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(92, 37);
+            this.button8.TabIndex = 0;
+            this.button8.Text = "Shutdown";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form1
             // 
