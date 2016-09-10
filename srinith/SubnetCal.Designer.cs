@@ -110,9 +110,9 @@
             // 
             // txtBroadcastIP
             // 
-            this.txtBroadcastIP.Enabled = false;
             this.txtBroadcastIP.Location = new System.Drawing.Point(48, 86);
             this.txtBroadcastIP.Name = "txtBroadcastIP";
+            this.txtBroadcastIP.ReadOnly = true;
             this.txtBroadcastIP.Size = new System.Drawing.Size(171, 20);
             this.txtBroadcastIP.TabIndex = 9;
             // 
@@ -176,14 +176,14 @@
             this.cbSubnetMask.Location = new System.Drawing.Point(303, 108);
             this.cbSubnetMask.Name = "cbSubnetMask";
             this.cbSubnetMask.Size = new System.Drawing.Size(171, 21);
-            this.cbSubnetMask.TabIndex = 3;
+            this.cbSubnetMask.TabIndex = 1;
             // 
             // txtIPAddress
             // 
             this.txtIPAddress.Location = new System.Drawing.Point(303, 58);
             this.txtIPAddress.Name = "txtIPAddress";
             this.txtIPAddress.Size = new System.Drawing.Size(171, 20);
-            this.txtIPAddress.TabIndex = 2;
+            this.txtIPAddress.TabIndex = 0;
             // 
             // label2
             // 
@@ -215,9 +215,9 @@
             // 
             // txtSubnetID
             // 
-            this.txtSubnetID.Enabled = false;
             this.txtSubnetID.Location = new System.Drawing.Point(48, 139);
             this.txtSubnetID.Name = "txtSubnetID";
+            this.txtSubnetID.ReadOnly = true;
             this.txtSubnetID.Size = new System.Drawing.Size(171, 20);
             this.txtSubnetID.TabIndex = 11;
             // 
@@ -250,25 +250,25 @@
             // 
             // txtSubnetBits
             // 
-            this.txtSubnetBits.Enabled = false;
             this.txtSubnetBits.Location = new System.Drawing.Point(48, 193);
             this.txtSubnetBits.Name = "txtSubnetBits";
+            this.txtSubnetBits.ReadOnly = true;
             this.txtSubnetBits.Size = new System.Drawing.Size(171, 20);
             this.txtSubnetBits.TabIndex = 15;
             // 
             // txtMaskBits
             // 
-            this.txtMaskBits.Enabled = false;
             this.txtMaskBits.Location = new System.Drawing.Point(48, 243);
             this.txtMaskBits.Name = "txtMaskBits";
+            this.txtMaskBits.ReadOnly = true;
             this.txtMaskBits.Size = new System.Drawing.Size(171, 20);
             this.txtMaskBits.TabIndex = 16;
             // 
             // txtMaximumSubnets
             // 
-            this.txtMaximumSubnets.Enabled = false;
             this.txtMaximumSubnets.Location = new System.Drawing.Point(48, 296);
             this.txtMaximumSubnets.Name = "txtMaximumSubnets";
+            this.txtMaximumSubnets.ReadOnly = true;
             this.txtMaximumSubnets.Size = new System.Drawing.Size(171, 20);
             this.txtMaximumSubnets.TabIndex = 17;
             // 
@@ -287,15 +287,15 @@
             this.btnCalculate.Location = new System.Drawing.Point(118, 125);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
-            this.btnCalculate.TabIndex = 0;
+            this.btnCalculate.TabIndex = 2;
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             // 
             // txtFirstOctetRange
             // 
-            this.txtFirstOctetRange.Enabled = false;
             this.txtFirstOctetRange.Location = new System.Drawing.Point(48, 348);
             this.txtFirstOctetRange.Name = "txtFirstOctetRange";
+            this.txtFirstOctetRange.ReadOnly = true;
             this.txtFirstOctetRange.Size = new System.Drawing.Size(171, 20);
             this.txtFirstOctetRange.TabIndex = 20;
             // 
