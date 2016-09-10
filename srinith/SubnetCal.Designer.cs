@@ -173,6 +173,30 @@
             // cbSubnetMask
             // 
             this.cbSubnetMask.FormattingEnabled = true;
+            this.cbSubnetMask.Items.AddRange(new object[] {
+            "255.0.0.0",
+            "255.128.0.0",
+            "255.192.0.0",
+            "255.224.0.0",
+            "255.240.0.0",
+            "255.248.0.0",
+            "255.252.0.0",
+            "255.254.0.0",
+            "255.255.0.0",
+            "255.255.128.0",
+            "255.255.192.0",
+            "255.255.224.0",
+            "255.255.240.0",
+            "255.255.248.0",
+            "255.255.252.0",
+            "255.255.254.0",
+            "255.255.255.0",
+            "255.255.255.128",
+            "255.255.255.192",
+            "255.255.255.224",
+            "255.255.255.240",
+            "255.255.255.248",
+            "255.255.255.252"});
             this.cbSubnetMask.Location = new System.Drawing.Point(303, 108);
             this.cbSubnetMask.Name = "cbSubnetMask";
             this.cbSubnetMask.Size = new System.Drawing.Size(171, 21);
