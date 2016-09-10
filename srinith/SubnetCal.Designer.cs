@@ -31,27 +31,27 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageIPV4 = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBroadcastIP = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbClassC = new System.Windows.Forms.RadioButton();
+            this.rbClassB = new System.Windows.Forms.RadioButton();
+            this.rbClassA = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbSubnetMask = new System.Windows.Forms.ComboBox();
+            this.txtIPAddress = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPageIPV6 = new System.Windows.Forms.TabPage();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtSubnetID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtSubnetBits = new System.Windows.Forms.TextBox();
+            this.txtMaskBits = new System.Windows.Forms.TextBox();
+            this.txtMaximumSubnets = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCalculate = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtFirstOctetRange = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPageIPV4.SuspendLayout();
@@ -70,24 +70,24 @@
             // 
             // tabPageIPV4
             // 
-            this.tabPageIPV4.Controls.Add(this.textBox7);
+            this.tabPageIPV4.Controls.Add(this.txtFirstOctetRange);
             this.tabPageIPV4.Controls.Add(this.label9);
-            this.tabPageIPV4.Controls.Add(this.textBox6);
-            this.tabPageIPV4.Controls.Add(this.textBox5);
-            this.tabPageIPV4.Controls.Add(this.textBox4);
+            this.tabPageIPV4.Controls.Add(this.txtMaximumSubnets);
+            this.tabPageIPV4.Controls.Add(this.txtMaskBits);
+            this.tabPageIPV4.Controls.Add(this.txtSubnetBits);
             this.tabPageIPV4.Controls.Add(this.label8);
             this.tabPageIPV4.Controls.Add(this.label7);
             this.tabPageIPV4.Controls.Add(this.label6);
-            this.tabPageIPV4.Controls.Add(this.textBox3);
+            this.tabPageIPV4.Controls.Add(this.txtSubnetID);
             this.tabPageIPV4.Controls.Add(this.label5);
-            this.tabPageIPV4.Controls.Add(this.textBox2);
+            this.tabPageIPV4.Controls.Add(this.txtBroadcastIP);
             this.tabPageIPV4.Controls.Add(this.label4);
-            this.tabPageIPV4.Controls.Add(this.radioButton3);
-            this.tabPageIPV4.Controls.Add(this.radioButton2);
-            this.tabPageIPV4.Controls.Add(this.radioButton1);
+            this.tabPageIPV4.Controls.Add(this.rbClassC);
+            this.tabPageIPV4.Controls.Add(this.rbClassB);
+            this.tabPageIPV4.Controls.Add(this.rbClassA);
             this.tabPageIPV4.Controls.Add(this.label3);
-            this.tabPageIPV4.Controls.Add(this.comboBox1);
-            this.tabPageIPV4.Controls.Add(this.textBox1);
+            this.tabPageIPV4.Controls.Add(this.cbSubnetMask);
+            this.tabPageIPV4.Controls.Add(this.txtIPAddress);
             this.tabPageIPV4.Controls.Add(this.label2);
             this.tabPageIPV4.Controls.Add(this.label1);
             this.tabPageIPV4.Controls.Add(this.groupBox1);
@@ -108,13 +108,13 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Subnet ID";
             // 
-            // textBox2
+            // txtBroadcastIP
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(48, 86);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(171, 20);
-            this.textBox2.TabIndex = 9;
+            this.txtBroadcastIP.Enabled = false;
+            this.txtBroadcastIP.Location = new System.Drawing.Point(48, 86);
+            this.txtBroadcastIP.Name = "txtBroadcastIP";
+            this.txtBroadcastIP.Size = new System.Drawing.Size(171, 20);
+            this.txtBroadcastIP.TabIndex = 9;
             // 
             // label4
             // 
@@ -125,41 +125,41 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Broadcast IP";
             // 
-            // radioButton3
+            // rbClassC
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Enabled = false;
-            this.radioButton3.Location = new System.Drawing.Point(187, 37);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(32, 17);
-            this.radioButton3.TabIndex = 7;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "C";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbClassC.AutoSize = true;
+            this.rbClassC.Enabled = false;
+            this.rbClassC.Location = new System.Drawing.Point(187, 37);
+            this.rbClassC.Name = "rbClassC";
+            this.rbClassC.Size = new System.Drawing.Size(32, 17);
+            this.rbClassC.TabIndex = 7;
+            this.rbClassC.TabStop = true;
+            this.rbClassC.Text = "C";
+            this.rbClassC.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbClassB
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Enabled = false;
-            this.radioButton2.Location = new System.Drawing.Point(117, 37);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(32, 17);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "B";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbClassB.AutoSize = true;
+            this.rbClassB.Enabled = false;
+            this.rbClassB.Location = new System.Drawing.Point(117, 37);
+            this.rbClassB.Name = "rbClassB";
+            this.rbClassB.Size = new System.Drawing.Size(32, 17);
+            this.rbClassB.TabIndex = 6;
+            this.rbClassB.TabStop = true;
+            this.rbClassB.Text = "B";
+            this.rbClassB.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbClassA
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Enabled = false;
-            this.radioButton1.Location = new System.Drawing.Point(48, 37);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(32, 17);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "A";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbClassA.AutoSize = true;
+            this.rbClassA.Enabled = false;
+            this.rbClassA.Location = new System.Drawing.Point(48, 37);
+            this.rbClassA.Name = "rbClassA";
+            this.rbClassA.Size = new System.Drawing.Size(32, 17);
+            this.rbClassA.TabIndex = 5;
+            this.rbClassA.TabStop = true;
+            this.rbClassA.Text = "A";
+            this.rbClassA.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -170,20 +170,20 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Class";
             // 
-            // comboBox1
+            // cbSubnetMask
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(303, 108);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 21);
-            this.comboBox1.TabIndex = 3;
+            this.cbSubnetMask.FormattingEnabled = true;
+            this.cbSubnetMask.Location = new System.Drawing.Point(303, 108);
+            this.cbSubnetMask.Name = "cbSubnetMask";
+            this.cbSubnetMask.Size = new System.Drawing.Size(171, 21);
+            this.cbSubnetMask.TabIndex = 3;
             // 
-            // textBox1
+            // txtIPAddress
             // 
-            this.textBox1.Location = new System.Drawing.Point(303, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtIPAddress.Location = new System.Drawing.Point(303, 58);
+            this.txtIPAddress.Name = "txtIPAddress";
+            this.txtIPAddress.Size = new System.Drawing.Size(171, 20);
+            this.txtIPAddress.TabIndex = 2;
             // 
             // label2
             // 
@@ -213,13 +213,13 @@
             this.tabPageIPV6.Text = "IPv6";
             this.tabPageIPV6.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtSubnetID
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(48, 139);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(171, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtSubnetID.Enabled = false;
+            this.txtSubnetID.Location = new System.Drawing.Point(48, 139);
+            this.txtSubnetID.Name = "txtSubnetID";
+            this.txtSubnetID.Size = new System.Drawing.Size(171, 20);
+            this.txtSubnetID.TabIndex = 11;
             // 
             // label6
             // 
@@ -248,29 +248,29 @@
             this.label8.TabIndex = 14;
             this.label8.Text = "Maximum Subnets";
             // 
-            // textBox4
+            // txtSubnetBits
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(48, 193);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(171, 20);
-            this.textBox4.TabIndex = 15;
+            this.txtSubnetBits.Enabled = false;
+            this.txtSubnetBits.Location = new System.Drawing.Point(48, 193);
+            this.txtSubnetBits.Name = "txtSubnetBits";
+            this.txtSubnetBits.Size = new System.Drawing.Size(171, 20);
+            this.txtSubnetBits.TabIndex = 15;
             // 
-            // textBox5
+            // txtMaskBits
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(48, 243);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(171, 20);
-            this.textBox5.TabIndex = 16;
+            this.txtMaskBits.Enabled = false;
+            this.txtMaskBits.Location = new System.Drawing.Point(48, 243);
+            this.txtMaskBits.Name = "txtMaskBits";
+            this.txtMaskBits.Size = new System.Drawing.Size(171, 20);
+            this.txtMaskBits.TabIndex = 16;
             // 
-            // textBox6
+            // txtMaximumSubnets
             // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(48, 296);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(171, 20);
-            this.textBox6.TabIndex = 17;
+            this.txtMaximumSubnets.Enabled = false;
+            this.txtMaximumSubnets.Location = new System.Drawing.Point(48, 296);
+            this.txtMaximumSubnets.Name = "txtMaximumSubnets";
+            this.txtMaximumSubnets.Size = new System.Drawing.Size(171, 20);
+            this.txtMaximumSubnets.TabIndex = 17;
             // 
             // groupBox1
             // 
@@ -291,13 +291,13 @@
             this.btnCalculate.Text = "Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             // 
-            // textBox7
+            // txtFirstOctetRange
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(48, 348);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(171, 20);
-            this.textBox7.TabIndex = 20;
+            this.txtFirstOctetRange.Enabled = false;
+            this.txtFirstOctetRange.Location = new System.Drawing.Point(48, 348);
+            this.txtFirstOctetRange.Name = "txtFirstOctetRange";
+            this.txtFirstOctetRange.Size = new System.Drawing.Size(171, 20);
+            this.txtFirstOctetRange.TabIndex = 20;
             // 
             // label9
             // 
@@ -331,26 +331,26 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPageIPV4;
         private System.Windows.Forms.TabPage tabPageIPV6;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbClassC;
+        private System.Windows.Forms.RadioButton rbClassB;
+        private System.Windows.Forms.RadioButton rbClassA;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbSubnetMask;
+        private System.Windows.Forms.TextBox txtIPAddress;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBroadcastIP;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtMaximumSubnets;
+        private System.Windows.Forms.TextBox txtMaskBits;
+        private System.Windows.Forms.TextBox txtSubnetBits;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtSubnetID;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtFirstOctetRange;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnCalculate;
     }
