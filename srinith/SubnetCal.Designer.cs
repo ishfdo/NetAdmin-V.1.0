@@ -30,6 +30,15 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageIPV4 = new System.Windows.Forms.TabPage();
+            this.txtFirstOctetRange = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtMaximumSubnets = new System.Windows.Forms.TextBox();
+            this.txtMaskBits = new System.Windows.Forms.TextBox();
+            this.txtSubnetBits = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtSubnetID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBroadcastIP = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,18 +50,11 @@
             this.txtIPAddress = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPageIPV6 = new System.Windows.Forms.TabPage();
-            this.txtSubnetID = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtSubnetBits = new System.Windows.Forms.TextBox();
-            this.txtMaskBits = new System.Windows.Forms.TextBox();
-            this.txtMaximumSubnets = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCalculate = new System.Windows.Forms.Button();
-            this.txtFirstOctetRange = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.tabPageIPV6 = new System.Windows.Forms.TabPage();
+            this.rbClassD = new System.Windows.Forms.RadioButton();
+            this.rbClassE = new System.Windows.Forms.RadioButton();
             this.tabControl1.SuspendLayout();
             this.tabPageIPV4.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -70,6 +72,8 @@
             // 
             // tabPageIPV4
             // 
+            this.tabPageIPV4.Controls.Add(this.rbClassE);
+            this.tabPageIPV4.Controls.Add(this.rbClassD);
             this.tabPageIPV4.Controls.Add(this.txtFirstOctetRange);
             this.tabPageIPV4.Controls.Add(this.label9);
             this.tabPageIPV4.Controls.Add(this.txtMaximumSubnets);
@@ -98,6 +102,82 @@
             this.tabPageIPV4.TabIndex = 0;
             this.tabPageIPV4.Text = "IPv4";
             this.tabPageIPV4.UseVisualStyleBackColor = true;
+            // 
+            // txtFirstOctetRange
+            // 
+            this.txtFirstOctetRange.Location = new System.Drawing.Point(48, 348);
+            this.txtFirstOctetRange.Name = "txtFirstOctetRange";
+            this.txtFirstOctetRange.ReadOnly = true;
+            this.txtFirstOctetRange.Size = new System.Drawing.Size(171, 20);
+            this.txtFirstOctetRange.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(45, 332);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(90, 13);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "First Octet Range";
+            // 
+            // txtMaximumSubnets
+            // 
+            this.txtMaximumSubnets.Location = new System.Drawing.Point(48, 296);
+            this.txtMaximumSubnets.Name = "txtMaximumSubnets";
+            this.txtMaximumSubnets.ReadOnly = true;
+            this.txtMaximumSubnets.Size = new System.Drawing.Size(171, 20);
+            this.txtMaximumSubnets.TabIndex = 17;
+            // 
+            // txtMaskBits
+            // 
+            this.txtMaskBits.Location = new System.Drawing.Point(48, 243);
+            this.txtMaskBits.Name = "txtMaskBits";
+            this.txtMaskBits.ReadOnly = true;
+            this.txtMaskBits.Size = new System.Drawing.Size(171, 20);
+            this.txtMaskBits.TabIndex = 16;
+            // 
+            // txtSubnetBits
+            // 
+            this.txtSubnetBits.Location = new System.Drawing.Point(48, 193);
+            this.txtSubnetBits.Name = "txtSubnetBits";
+            this.txtSubnetBits.ReadOnly = true;
+            this.txtSubnetBits.Size = new System.Drawing.Size(171, 20);
+            this.txtSubnetBits.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(45, 280);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(93, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Maximum Subnets";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(45, 227);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Mask Bits";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(45, 177);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(61, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Subnet Bits";
+            // 
+            // txtSubnetID
+            // 
+            this.txtSubnetID.Location = new System.Drawing.Point(48, 139);
+            this.txtSubnetID.Name = "txtSubnetID";
+            this.txtSubnetID.ReadOnly = true;
+            this.txtSubnetID.Size = new System.Drawing.Size(171, 20);
+            this.txtSubnetID.TabIndex = 11;
             // 
             // label5
             // 
@@ -129,7 +209,7 @@
             // 
             this.rbClassC.AutoSize = true;
             this.rbClassC.Enabled = false;
-            this.rbClassC.Location = new System.Drawing.Point(187, 37);
+            this.rbClassC.Location = new System.Drawing.Point(124, 37);
             this.rbClassC.Name = "rbClassC";
             this.rbClassC.Size = new System.Drawing.Size(32, 17);
             this.rbClassC.TabIndex = 7;
@@ -141,7 +221,7 @@
             // 
             this.rbClassB.AutoSize = true;
             this.rbClassB.Enabled = false;
-            this.rbClassB.Location = new System.Drawing.Point(117, 37);
+            this.rbClassB.Location = new System.Drawing.Point(86, 37);
             this.rbClassB.Name = "rbClassB";
             this.rbClassB.Size = new System.Drawing.Size(32, 17);
             this.rbClassB.TabIndex = 6;
@@ -201,6 +281,7 @@
             this.cbSubnetMask.Name = "cbSubnetMask";
             this.cbSubnetMask.Size = new System.Drawing.Size(171, 21);
             this.cbSubnetMask.TabIndex = 1;
+            this.cbSubnetMask.Text = "Select Subnet Mask";
             // 
             // txtIPAddress
             // 
@@ -227,75 +308,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "IP Address";
             // 
-            // tabPageIPV6
-            // 
-            this.tabPageIPV6.Location = new System.Drawing.Point(4, 22);
-            this.tabPageIPV6.Name = "tabPageIPV6";
-            this.tabPageIPV6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageIPV6.Size = new System.Drawing.Size(552, 411);
-            this.tabPageIPV6.TabIndex = 1;
-            this.tabPageIPV6.Text = "IPv6";
-            this.tabPageIPV6.UseVisualStyleBackColor = true;
-            // 
-            // txtSubnetID
-            // 
-            this.txtSubnetID.Location = new System.Drawing.Point(48, 139);
-            this.txtSubnetID.Name = "txtSubnetID";
-            this.txtSubnetID.ReadOnly = true;
-            this.txtSubnetID.Size = new System.Drawing.Size(171, 20);
-            this.txtSubnetID.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(45, 177);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Subnet Bits";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(45, 227);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Mask Bits";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(45, 280);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 13);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Maximum Subnets";
-            // 
-            // txtSubnetBits
-            // 
-            this.txtSubnetBits.Location = new System.Drawing.Point(48, 193);
-            this.txtSubnetBits.Name = "txtSubnetBits";
-            this.txtSubnetBits.ReadOnly = true;
-            this.txtSubnetBits.Size = new System.Drawing.Size(171, 20);
-            this.txtSubnetBits.TabIndex = 15;
-            // 
-            // txtMaskBits
-            // 
-            this.txtMaskBits.Location = new System.Drawing.Point(48, 243);
-            this.txtMaskBits.Name = "txtMaskBits";
-            this.txtMaskBits.ReadOnly = true;
-            this.txtMaskBits.Size = new System.Drawing.Size(171, 20);
-            this.txtMaskBits.TabIndex = 16;
-            // 
-            // txtMaximumSubnets
-            // 
-            this.txtMaximumSubnets.Location = new System.Drawing.Point(48, 296);
-            this.txtMaximumSubnets.Name = "txtMaximumSubnets";
-            this.txtMaximumSubnets.ReadOnly = true;
-            this.txtMaximumSubnets.Size = new System.Drawing.Size(171, 20);
-            this.txtMaximumSubnets.TabIndex = 17;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnCalculate);
@@ -316,22 +328,39 @@
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
-            // txtFirstOctetRange
+            // tabPageIPV6
             // 
-            this.txtFirstOctetRange.Location = new System.Drawing.Point(48, 348);
-            this.txtFirstOctetRange.Name = "txtFirstOctetRange";
-            this.txtFirstOctetRange.ReadOnly = true;
-            this.txtFirstOctetRange.Size = new System.Drawing.Size(171, 20);
-            this.txtFirstOctetRange.TabIndex = 20;
+            this.tabPageIPV6.Location = new System.Drawing.Point(4, 22);
+            this.tabPageIPV6.Name = "tabPageIPV6";
+            this.tabPageIPV6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageIPV6.Size = new System.Drawing.Size(552, 411);
+            this.tabPageIPV6.TabIndex = 1;
+            this.tabPageIPV6.Text = "IPv6";
+            this.tabPageIPV6.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // rbClassD
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(45, 332);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(90, 13);
-            this.label9.TabIndex = 19;
-            this.label9.Text = "First Octet Range";
+            this.rbClassD.AutoSize = true;
+            this.rbClassD.Enabled = false;
+            this.rbClassD.Location = new System.Drawing.Point(162, 37);
+            this.rbClassD.Name = "rbClassD";
+            this.rbClassD.Size = new System.Drawing.Size(33, 17);
+            this.rbClassD.TabIndex = 21;
+            this.rbClassD.TabStop = true;
+            this.rbClassD.Text = "D";
+            this.rbClassD.UseVisualStyleBackColor = true;
+            // 
+            // rbClassE
+            // 
+            this.rbClassE.AutoSize = true;
+            this.rbClassE.Enabled = false;
+            this.rbClassE.Location = new System.Drawing.Point(200, 37);
+            this.rbClassE.Name = "rbClassE";
+            this.rbClassE.Size = new System.Drawing.Size(32, 17);
+            this.rbClassE.TabIndex = 22;
+            this.rbClassE.TabStop = true;
+            this.rbClassE.Text = "E";
+            this.rbClassE.UseVisualStyleBackColor = true;
             // 
             // SubnetCal
             // 
@@ -378,5 +407,7 @@
         private System.Windows.Forms.TextBox txtFirstOctetRange;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.RadioButton rbClassE;
+        private System.Windows.Forms.RadioButton rbClassD;
     }
 }

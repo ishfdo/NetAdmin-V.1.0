@@ -58,7 +58,46 @@ namespace srinith
             }
 
             /* ----- Display info -----*/
-            
+            //broadcast IP and subnet ID
+            txtBroadcastIP.Text = GetBroadcastAddress(address, subnetID).ToString();
+            txtSubnetID.Text = GetSubnetID(address, subnetID).ToString();
+
+            // class and the first octet range of the IP address
+            int firstOctet = Int32.Parse(txtIPAddress.Text.Split('.')[0]);
+            if (firstOctet <= 127)
+            {
+                txtFirstOctetRange.Text = "1-127";
+                rbClassA.Checked = true;
+            }
+            else if (firstOctet <= 191)
+            {
+                txtFirstOctetRange.Text = "128 -191";
+                rbClassB.Checked = true;
+            }
+            else if (firstOctet <= 223)
+            {
+                txtFirstOctetRange.Text = "192 -223";
+                rbClassC.Checked = true;
+            }
+            else if (firstOctet <= 239)
+            {
+                txtFirstOctetRange.Text = "224 –239";
+                rbClassD.Checked = true;
+            }
+            else
+            {
+                txtFirstOctetRange.Text = "240 –254";
+                rbClassE.Checked = true;
+            }
+
+            // maximum subnets
+            txtMaximumSubnets.Text = (Math.Pow(2, cbSubnetMask.SelectedIndex)).ToString();
+
+            // mask bits
+            txtMaskBits.Text = (8 + cbSubnetMask.SelectedIndex).ToString();
+
+            // subnet bits
+            txtSubnetBits.Text = (cbSubnetMask.SelectedIndex).ToString();
         }
 
         /* ---------- Required functions ---------- */
