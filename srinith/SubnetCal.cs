@@ -16,5 +16,10 @@ namespace srinith
         {
             InitializeComponent();
         }
+
+        private void SubnetCal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
