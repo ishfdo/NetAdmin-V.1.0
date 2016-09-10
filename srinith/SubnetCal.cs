@@ -26,7 +26,39 @@ namespace srinith
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
+            IPAddress address;
+            IPAddress subnetID;
 
+            /* ----- Validation of inputs ----- */
+            if (txtIPAddress.Text == "")
+            {
+                MessageBox.Show("Please enter IP address.");
+                return;
+            }
+
+            try
+            {
+                subnetID = IPAddress.Parse(cbSubnetMask.SelectedItem.ToString());
+            }
+            catch (NullReferenceException ex)
+            {
+                MessageBox.Show("Please enter subnet mask.");
+                return;
+            }
+
+            try
+            {
+                address = IPAddress.Parse(txtIPAddress.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please enter a valid IP address.");
+                txtIPAddress.Text = "";
+                return;
+            }
+
+            /* ----- Display info -----*/
+            
         }
 
         /* ---------- Required functions ---------- */
