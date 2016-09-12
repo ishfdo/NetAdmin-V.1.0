@@ -75,6 +75,7 @@
             this.txtChecksum.Name = "txtChecksum";
             this.txtChecksum.Size = new System.Drawing.Size(163, 20);
             this.txtChecksum.TabIndex = 3;
+            this.txtChecksum.TextChanged += new System.EventHandler(this.txtChecksum_TextChanged);
             // 
             // btnOpenFile
             // 

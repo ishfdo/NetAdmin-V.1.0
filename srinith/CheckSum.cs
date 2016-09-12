@@ -33,6 +33,7 @@ namespace srinith
         {
             // Configure UI elements
             btnOpenFile.Text = "Change File";
+            txtFileName.Text = openFileDialog1.FileName;
         }
 
         private void btnOpenFile_Click(object sender, EventArgs e)
@@ -42,7 +43,20 @@ namespace srinith
 
         private void btnVerify_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void txtChecksum_TextChanged(object sender, EventArgs e)
+        {
+            // Configure UI elements
+            if (txtChecksum.Text != "" && txtFileName.Text != "")
+            {
+                btnVerify.Enabled = true;
+            }
+            else
+            {
+                btnVerify.Enabled = false;
+            }
         }
     }
 }
