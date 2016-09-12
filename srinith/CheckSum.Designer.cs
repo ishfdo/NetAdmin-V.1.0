@@ -38,6 +38,7 @@
             this.Name = "CheckSum";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Check Sum";
+            this.Load += new System.EventHandler(this.CheckSum_Load);
             this.ResumeLayout(false);
 
         }
