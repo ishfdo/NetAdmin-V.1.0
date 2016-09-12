@@ -45,7 +45,7 @@
             this.label1.Location = new System.Drawing.Point(142, 133);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(23, 13);
-            this.label1.TabIndex = 0;
+            this.label1.TabIndex = 4;
             this.label1.Text = "File";
             // 
             // label2
@@ -54,7 +54,7 @@
             this.label2.Location = new System.Drawing.Point(142, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 5;
             this.label2.Text = "Checksum";
             // 
             // openFileDialog1
@@ -66,33 +66,34 @@
             // 
             this.txtFileName.Location = new System.Drawing.Point(221, 130);
             this.txtFileName.Name = "txtFileName";
-            this.txtFileName.Size = new System.Drawing.Size(100, 20);
+            this.txtFileName.Size = new System.Drawing.Size(163, 20);
             this.txtFileName.TabIndex = 2;
             // 
             // txtChecksum
             // 
             this.txtChecksum.Location = new System.Drawing.Point(221, 158);
             this.txtChecksum.Name = "txtChecksum";
-            this.txtChecksum.Size = new System.Drawing.Size(100, 20);
+            this.txtChecksum.Size = new System.Drawing.Size(163, 20);
             this.txtChecksum.TabIndex = 3;
             // 
             // btnOpenFile
             // 
-            this.btnOpenFile.Location = new System.Drawing.Point(327, 128);
+            this.btnOpenFile.Location = new System.Drawing.Point(390, 128);
             this.btnOpenFile.Name = "btnOpenFile";
             this.btnOpenFile.Size = new System.Drawing.Size(75, 23);
-            this.btnOpenFile.TabIndex = 4;
+            this.btnOpenFile.TabIndex = 0;
             this.btnOpenFile.UseVisualStyleBackColor = true;
             this.btnOpenFile.Click += new System.EventHandler(this.btnOpenFile_Click);
             // 
             // btnVerify
             // 
-            this.btnVerify.Location = new System.Drawing.Point(246, 184);
+            this.btnVerify.Location = new System.Drawing.Point(309, 184);
             this.btnVerify.Name = "btnVerify";
             this.btnVerify.Size = new System.Drawing.Size(75, 23);
-            this.btnVerify.TabIndex = 5;
+            this.btnVerify.TabIndex = 1;
             this.btnVerify.Text = "Verify";
             this.btnVerify.UseVisualStyleBackColor = true;
+            this.btnVerify.Click += new System.EventHandler(this.btnVerify_Click);
             // 
             // lblMatch
             // 

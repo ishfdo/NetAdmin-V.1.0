@@ -24,6 +24,9 @@ namespace srinith
 
             // Configure UI elements
             btnOpenFile.Text = "Upload File";
+            lblMatch.Text = "";
+            lblMismatch.Text = "";
+            btnVerify.Enabled = false;
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -35,6 +38,11 @@ namespace srinith
         private void btnOpenFile_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
+        }
+
+        private void btnVerify_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
