@@ -37,6 +37,10 @@
             this.btnVerify = new System.Windows.Forms.Button();
             this.lblMatch = new System.Windows.Forms.Label();
             this.lblMismatch = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblCorrectHash = new System.Windows.Forms.Label();
+            this.lblEnteredHash = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -100,26 +104,69 @@
             // 
             this.lblMatch.AutoSize = true;
             this.lblMatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatch.Location = new System.Drawing.Point(142, 230);
+            this.lblMatch.Location = new System.Drawing.Point(142, 315);
             this.lblMatch.Name = "lblMatch";
-            this.lblMatch.Size = new System.Drawing.Size(0, 13);
+            this.lblMatch.Size = new System.Drawing.Size(34, 13);
             this.lblMatch.TabIndex = 6;
+            this.lblMatch.Text = "HHH";
             // 
             // lblMismatch
             // 
             this.lblMismatch.AutoSize = true;
             this.lblMismatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMismatch.ForeColor = System.Drawing.Color.Red;
-            this.lblMismatch.Location = new System.Drawing.Point(142, 230);
+            this.lblMismatch.Location = new System.Drawing.Point(142, 315);
             this.lblMismatch.Name = "lblMismatch";
-            this.lblMismatch.Size = new System.Drawing.Size(0, 13);
+            this.lblMismatch.Size = new System.Drawing.Size(34, 13);
             this.lblMismatch.TabIndex = 7;
+            this.lblMismatch.Text = "HHH";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(141, 257);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Correct Hash:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(142, 285);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 13);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Hash You Entered:";
+            // 
+            // lblCorrectHash
+            // 
+            this.lblCorrectHash.AutoSize = true;
+            this.lblCorrectHash.Location = new System.Drawing.Point(242, 257);
+            this.lblCorrectHash.Name = "lblCorrectHash";
+            this.lblCorrectHash.Size = new System.Drawing.Size(35, 13);
+            this.lblCorrectHash.TabIndex = 10;
+            this.lblCorrectHash.Text = "label5";
+            // 
+            // lblEnteredHash
+            // 
+            this.lblEnteredHash.AutoSize = true;
+            this.lblEnteredHash.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblEnteredHash.Location = new System.Drawing.Point(242, 285);
+            this.lblEnteredHash.Name = "lblEnteredHash";
+            this.lblEnteredHash.Size = new System.Drawing.Size(35, 13);
+            this.lblEnteredHash.TabIndex = 11;
+            this.lblEnteredHash.Text = "label6";
             // 
             // CheckSum
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.lblEnteredHash);
+            this.Controls.Add(this.lblCorrectHash);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.lblMismatch);
             this.Controls.Add(this.lblMatch);
             this.Controls.Add(this.btnVerify);
@@ -148,5 +195,9 @@
         private System.Windows.Forms.Button btnVerify;
         private System.Windows.Forms.Label lblMatch;
         private System.Windows.Forms.Label lblMismatch;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCorrectHash;
+        private System.Windows.Forms.Label lblEnteredHash;
     }
 }
