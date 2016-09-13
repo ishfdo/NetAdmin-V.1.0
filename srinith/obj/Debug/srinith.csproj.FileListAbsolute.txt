@@ -21,7 +21,6 @@ C:\Users\Nishen Peiris\Documents\NetAdmin-V.1.0\srinith\obj\Debug\srinith.csproj
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\bin\Debug\srinith.exe.config
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\bin\Debug\srinith.exe
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\bin\Debug\srinith.pdb
-C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.csprojResolveAssemblyReference.cache
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.CheckSum.resources
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.Form1.resources
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.Hardware_Info.resources

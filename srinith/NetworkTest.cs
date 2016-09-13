@@ -1,8 +1,6 @@
 ﻿using System;
-using System;
 using System.ComponentModel;
 using System.Net;
-using System.Net.NetworkInformation;
 using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading;
@@ -66,12 +64,13 @@ namespace srinith
             PingOptions options = new PingOptions(64, true);
 
             rtbConsole.AppendText("Time to live: " + options.Ttl);
-            rtbConsole.AppendText("Don't fragment: " + options.DontFragment);
+            rtbConsole.AppendText("\nDon't fragment: " + options.DontFragment);
 
             // Send the ping asynchronously.
             // Use the waiter as the user token.
             // When the callback completes, it can wake up this thread.
             pingSender.SendAsync(who, timeout, buffer, options, waiter);
+            MessageBox.Show("Ping packet sent successfully. Waiting for reply...");
 
             // Prevent this example application from ending.
             // A real application should do something useful
@@ -86,7 +85,7 @@ namespace srinith
             // If the operation was canceled, display a message to the user.
             if (e.Cancelled)
             {
-                rtbConsole.AppendText("Ping canceled.");
+                rtbConsole.AppendText("\nPing canceled.");
 
                 // Let the main thread resume. 
                 // UserToken is the AutoResetEvent object that the main thread 
@@ -97,7 +96,7 @@ namespace srinith
             // If an error occurred, display the exception to the user.
             if (e.Error != null)
             {
-                rtbConsole.AppendText("Ping failed:");
+                rtbConsole.AppendText("\nPing failed:");
                 rtbConsole.AppendText(e.Error.ToString());
 
                 // Let the main thread resume. 
@@ -117,14 +116,16 @@ namespace srinith
             if (reply == null)
                 return;
 
-            Console.WriteLine("ping status: {0}", reply.Status);
+            rtbConsole.AppendText("\n\nPing Results..");
+            rtbConsole.AppendText("\n===========");
+            rtbConsole.AppendText("\nping status: " + reply.Status);
             if (reply.Status == IPStatus.Success)
             {
-                rtbConsole.AppendText("Address: " + reply.Address.ToString());
-                rtbConsole.AppendText("RoundTrip time: " + reply.RoundtripTime);
-                rtbConsole.AppendText("Time to live: " + reply.Options.Ttl);
-                rtbConsole.AppendText("Don't fragment: " + reply.Options.DontFragment);
-                rtbConsole.AppendText("Buffer size: " + reply.Buffer.Length);
+                rtbConsole.AppendText("\nAddress: " + reply.Address.ToString());
+                rtbConsole.AppendText("\nRoundTrip time: " + reply.RoundtripTime);
+                rtbConsole.AppendText("\nTime to live: " + reply.Options.Ttl);
+                rtbConsole.AppendText("\nDon't fragment: " + reply.Options.DontFragment);
+                rtbConsole.AppendText("\nBuffer size: " + reply.Buffer.Length);
             }
         }
     }
