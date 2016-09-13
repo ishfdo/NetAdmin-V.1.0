@@ -87,14 +87,14 @@
             this.txtHost.Location = new System.Drawing.Point(243, 65);
             this.txtHost.Name = "txtHost";
             this.txtHost.Size = new System.Drawing.Size(147, 20);
-            this.txtHost.TabIndex = 1;
+            this.txtHost.TabIndex = 0;
             // 
             // btnPing
             // 
             this.btnPing.Location = new System.Drawing.Point(315, 91);
             this.btnPing.Name = "btnPing";
             this.btnPing.Size = new System.Drawing.Size(75, 23);
-            this.btnPing.TabIndex = 2;
+            this.btnPing.TabIndex = 1;
             this.btnPing.Text = "Ping";
             this.btnPing.UseVisualStyleBackColor = true;
             // 
@@ -104,7 +104,7 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(436, 195);
-            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             // 
             // NetworkTest
