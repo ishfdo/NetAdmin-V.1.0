@@ -88,6 +88,7 @@
             this.txtHost.Name = "txtHost";
             this.txtHost.Size = new System.Drawing.Size(147, 20);
             this.txtHost.TabIndex = 0;
+            this.txtHost.TextChanged += new System.EventHandler(this.txtHost_TextChanged);
             // 
             // btnPing
             // 
@@ -97,6 +98,7 @@
             this.btnPing.TabIndex = 1;
             this.btnPing.Text = "Ping";
             this.btnPing.UseVisualStyleBackColor = true;
+            this.btnPing.Click += new System.EventHandler(this.btnPing_Click);
             // 
             // richTextBox1
             // 
@@ -116,6 +118,7 @@
             this.Name = "NetworkTest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Network Test";
+            this.Load += new System.EventHandler(this.NetworkTest_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

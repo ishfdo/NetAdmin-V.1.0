@@ -16,5 +16,28 @@ namespace srinith
         {
             InitializeComponent();
         }
+
+        private void NetworkTest_Load(object sender, EventArgs e)
+        {
+            // Set UI elements
+            btnPing.Enabled = false;
+        }
+
+        private void txtHost_TextChanged(object sender, EventArgs e)
+        {
+            if (txtHost.Text.Equals(""))
+            {
+                btnPing.Enabled = false;
+            }
+            else
+            {
+                btnPing.Enabled = true;
+            }
+        }
+
+        private void btnPing_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
