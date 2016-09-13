@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtHost = new System.Windows.Forms.TextBox();
             this.btnPing = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbConsole = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -51,7 +51,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.richTextBox1);
+            this.tabPage1.Controls.Add(this.rtbConsole);
             this.tabPage1.Controls.Add(this.btnPing);
             this.tabPage1.Controls.Add(this.txtHost);
             this.tabPage1.Controls.Add(this.label1);
@@ -100,14 +100,14 @@
             this.btnPing.UseVisualStyleBackColor = true;
             this.btnPing.Click += new System.EventHandler(this.btnPing_Click);
             // 
-            // richTextBox1
+            // rtbConsole
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(54, 153);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(436, 195);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.rtbConsole.Location = new System.Drawing.Point(54, 153);
+            this.rtbConsole.Name = "rtbConsole";
+            this.rtbConsole.ReadOnly = true;
+            this.rtbConsole.Size = new System.Drawing.Size(436, 195);
+            this.rtbConsole.TabIndex = 2;
+            this.rtbConsole.Text = "";
             // 
             // NetworkTest
             // 
@@ -130,7 +130,7 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbConsole;
         private System.Windows.Forms.Button btnPing;
         private System.Windows.Forms.TextBox txtHost;
         private System.Windows.Forms.Label label1;
