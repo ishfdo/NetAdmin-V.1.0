@@ -37,6 +37,12 @@ namespace srinith
 
         private void btnPing_Click(object sender, EventArgs e)
         {
+            if (txtHost.Text.Equals(""))
+            {
+                MessageBox.Show("Ping needs a host or IP Address.");
+                return;
+            }
+
 
         }
     }
