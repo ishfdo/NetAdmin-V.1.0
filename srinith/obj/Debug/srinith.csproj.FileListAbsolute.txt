@@ -32,4 +32,3 @@ C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srin
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.csproj.GenerateResource.Cache
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.exe
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.pdb
-C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\NetAdmin-V.1.0\srinith\obj\Debug\srinith.csprojResolveAssemblyReference.cache
